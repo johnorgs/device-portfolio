@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Device</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="mystyle.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<link rel="shortcut icon" href="https://johnorgs.github.io/customdesign/desk.ico">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<style type="text/css">
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: rgba(555,0,0,0.8);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255,0,0,0.4);
+
+}
+
+a.back-to-top {
+  display: none;
+  width: 60px;
+  height: 60px;
+  text-indent: -9999px;
+  position: fixed;
+  z-index: 999;
+  right: 20px;
+  bottom: 20px;
+  background: red url("cd-top-arrow.svg") no-repeat center 50%;
+  opacity: 0.5;
+
+
+}
+a.back-to-top:hover
+{
+
+  opacity:1;
+}
+
+.bounce {
+  display: inline-block;
+  position: relative;
+  -moz-animation: bounce 0.5s infinite linear;
+  -o-animation: bounce 0.5s infinite linear;
+  -webkit-animation: bounce 0.5s infinite linear;
+  animation: bounce 0.5s infinite linear;
+  colr:000;
+}
+
+@-webkit-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-moz-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-o-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@-ms-keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+@keyframes bounce {
+    0% { top: 0; }
+    50% { top: -0.2em; }
+    70% { top: -0.3em; }
+    100% { top: 0; }
+}
+
+
+
+.tablink{
+	height:80px;
+}
+</style>
+</head>
+<body  id="home">
+<!-- Navigation bar with social media icons -->
+<ul class="w3-navbar w3-black w3-hide-small" style="position:fixed;width:100%;z-index:999;">
+  <li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
+  <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+  <li><a href="#"><i class="fa fa-snapchat"></i></a></li>
+  <li><a href="#"><i class="fa fa-flickr"></i></a></li>
+  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+</ul>
+<br>
+  <ul class="w3-navbar w3-white w3-wide w3-padding-4 w3-card-2" style="position:fixed;width:100%;z-index:900;padding:1px;">
+  	<br>
+    <li>
+      <a href="#home2" class="w3-margin-left s4"><b>Apple</b> Architects</a>
+    </li>
+    <!-- Float links to the right. Hide them on small screens -->
+    <li class="w3-right w3-hide-small">
+      <a href="#section1" class="w3-left s2">Projects</a>
+      <a href="#projects" class="w3-left s5">Extras</a>
+      <a href="#ssd1" class="w3-left s2">Contact us</a>
+      <a href="#ssd2" class="w3-left s5">About Us</a>
+      <a href="#about" class="w3-left w3-margin-right s3">Buy Now</a>
+
+    </li>
+  </ul>
+  <br><br><br>
+
+  <!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:100%;" id="home2">
+  <img class="w3-image" src="https://i.ytimg.com/vi/DPKk3WL_vTY/maxresdefault.jpg" alt="Architecture" width="100%" height="600px">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-black"><span class="w3-padding w3-white w3-opacity-min"><b>Apple</b></span> <span class="w3-hide-small w3-text-light-black">Architects</span></h1>
+    <br>
+    <br>
+    <a href="#section1" class="sec1"><i class="fa fa-sort-down w3-xxlarge bounce" style="color:white;"></i></a>
+  </div>
+</header>
+
+
+<!-- Clarity Section -->
+<div class="w3-padding-64 " id="section1">
+  <div class="w3-row">
+  	  <h1 class="w3-jumbo w3-center"><b>Mackbook Pro</b></h1>
+      <hr class="w3-center" >
+     
+  	<div class="w3-col l7 m6" id="ss1">
+     <img class="w3-image w3-round-large w3-hide-small w3-grayscale" src="https://static1.squarespace.com/static/5192a215e4b0efb5c8bd028c/5527dc9ee4b05b39af08764b/57163dabb654f994ad57f362/1461075384287/macbook-banner-2.png" alt="App" width="100%" height="100%">
+    </div>
+    <div class="w3-col l5 m6">
+    	<div class="conatiner " style="padding:15px;">
+      <h1 class="w3-center"><b>Pro</b></h1>
+      <hr class="w3-center" >
+      
+      
+      <p class="w3-left"><span class="w3-xlarge container w3-padding-64">A revolution in Personal Computer.</span> 
+It’s faster and more powerful than before, yet remarkably thinner and lighter. It has the brightest, most colourful Mac notebook display ever. And it introduces the Touch Bar — a Multi-Touch–enabled strip of glass built into the keyboard for instant access to the tools you want, exactly when you want them. The new MacBook Pro is built on groundbreaking ideas. And it’s ready for yours.</p>
+    </div>
+    </div>
+    
+    
+  </div>
+</div>
+
+<!-- Clarity Section -->
+<div class="w3-padding-64 ">
+  <div class="w3-row">
+    <div class="w3-col l5 m6">
+    	<div class="conatiner " style="padding:15px;">
+      <h1 class=" w3-center"><b>Thunderbolt 3</b></h1>
+      <hr class="w3-center" >
+      
+      
+      <p class="w3-right"><span class="w3-xlarge container w3-padding-64">A revolution in speed.</span> Thunderbolt 3 combines ultra-high bandwidth with the ultra-versatility of the USB-C industry standard to create one revved-up universal port. It integrates data transfer, charging and video output in a single connector, delivering up to 40 Gbps of throughput for twice the bandwidth of Thunderbolt 2. And both sizes of MacBook Pro are available with four ports, so you can do all that from either side. Existing devices are easily connected with a cable or adapter. And Thunderbolt 3 is reversible, so no matter how you plug in, it’s always right side up.</p>
+    </div>
+    </div>
+    <div class="w3-col l7 m6" id="ss1">
+     <img class="w3-image w3-round-large w3-hide-small w3-grayscale" src="https://9to5mac.files.wordpress.com/2016/09/macbook.png?w=1600&h=1000" alt="App" width="100%" height="100%">
+    </div>
+    
+  </div>
+</div>
+
+<!-- Photo Grid -->
+  <div class="w3-row" id="projects">
+  	<br>
+  	<br>
+    <div class="w3-half">
+      <img src="http://cdn.bgr.com/2016/01/gold-macbook.jpg?quality=98&strip=all" style="width:100%">
+      <img src="http://static.trustedreviews.com/94/000038c9a/0434_orh500w750/macbook-12.jpg" style="width:100%">
+      
+    </div>
+
+    <div class="w3-half">
+      <img src="http://tech.firstpost.com/wp-content/uploads/2016/04/Apple-MacBook-2016-Rose-Gold.jpg" style="width:100%;">
+      <img src="http://images.indianexpress.com/2016/04/macbook-e.jpg?w=820?w=664" style="width:100%">
+    </div>
+    <img src="http://cdn3.digitalartsonline.co.uk/cmsdata/features/3645668/new-macbook-pro-fb2.jpg" style="width:100%;50%;">
+  </div>
+
+
+
+
+
+<!-- Pricing Section -->
+<div class="w3-container w3-padding-64 w3-center " id="about">
+  
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Macbook</li>
+        <img src="http://www.laptopmag.com/images/uploads/4758/g/apple-macbook-2016-nw-g03.jpg" style="width:100%;height:300px;">
+        <li class="w3-padding-16"><b>10GB</b> Storage</li>
+        <li class="w3-padding-16"><b>10</b> Emails</li>
+        <li class="w3-padding-16"><b>10</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 999</h2>
+          <span class="w3-opacity"></span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-btn w3-black w3-padding-large">Buy</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-red w3-xlarge w3-padding-48">Macbook Pro</li>
+        <img src="http://www.hdwallpapers.in/walls/macbook_pro-wide.jpg" style="width:100%;height:350px;">
+        <li class="w3-padding-16"><b>25GB</b> Storage</li>
+        <li class="w3-padding-16"><b>25</b> Emails</li>
+        <li class="w3-padding-16"><b>25</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 1725</h2>
+          <span class="w3-opacity"></span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-btn w3-black w3-padding-large">Buy</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Macbook Air</li>
+        <img src="https://cnet2.cbsistatic.com/img/9FgXmNRhIBCj6UReH6Ovh3zDULw=/770x578/2016/04/19/d9d62a72-6493-44e6-bcec-9615df24fe2b/apple-macbook-2016-13.jpg" style="width:100%;height:300px;">
+        <li class="w3-padding-16"><b>50GB</b> Storage</li>
+        <li class="w3-padding-16"><b>50</b> Ids</li>
+        <li class="w3-padding-16"><b>50</b> Domains</li>
+        <li class="w3-padding-16"><b>Endless</b> Support</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$ 1550</h2>
+          <span class="w3-opacity"></span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-btn w3-black w3-padding-large">Buy</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!--
+<div class="w3-container w3-black w3-padding-64">
+	
+  <h1 class="w3-center">The Menu</h1>
+  <br><br><br>
+
+<div class="w3-container">
+<div class="w3-black " style="border-style:solid;border-width:1px;">
+  <ul class="w3-navbar w3-black w3-center ">
+    <li style="width:33.3%;height:80px;"><a href="javascript:void(0)" class="tablink w3-red" onclick="openCity(event, 'London');" style="padding:28px;">London</a></li>
+    <li style="width:33.3%;height:80px;"><a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'Paris');" style="padding:28px;">Paris</a></li>
+    <li style="width:33.4%;height:80px;"><a href="javascript:void(0)" class="tablink" onclick="openCity(event, 'Tokyo');" style="padding:28px;">Tokyo</a></li>
+  </ul>
+
+  <div id="London" class="w3-container w3-border city w3-white w3-padding-32">
+    <h2>London</h2>
+    <p>London is the capital city of England.</p>
+  </div>
+
+  <div id="Paris" class="w3-padding-32 w3-container w3-border city w3-white" style="display:none">
+    <h2>Paris</h2>
+    <p>Paris is the capital of France.</p> 
+  </div>
+
+  <div id="Tokyo" class="w3-padding-32 w3-container w3-border city w3-white" style="display:none">
+    <h2>Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+</div>
+</div>
+ <br><br><br>
+</div>
+
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>
+
+-->
+
+<!-- Contact Section -->
+<div class="w3-light-grey" id="ssd1">
+  <div class="w3-padding-32 w3-content w3-text-grey " id="contact" style="margin-bottom:64px">
+    <h2 class="w3-center">Contact Us</h2>
+    <hr class="w3-opacity">
+
+    <p>Lets get in touch. Send me a message:</p>
+    <form>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-btn w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>  
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity  w3-xlarge" id="ssd2">
+  <i class="fa fa-facebook-official w3-hover-text-indigo"></i>
+  <i class="fa fa-instagram w3-hover-text-purple"></i>
+  <i class="fa fa-snapchat w3-hover-text-yellow"></i>
+  <i class="fa fa-pinterest-p w3-hover-text-red"></i>
+  <i class="fa fa-twitter w3-hover-text-light-blue"></i>
+  <i class="fa fa-linkedin w3-hover-text-indigo"></i>
+  <p class="w3-medium">Powered by John @2016</p>
+</footer>
+
+<a href="#home" class="back-to-top">Back to Top</a>
+
+
+
+<script type="text/javascript">var amountScrolled = 300;
+
+$(window).scroll(function() {
+  if ( $(window).scrollTop() > amountScrolled ) {
+    $('a.back-to-top').fadeIn('slow');
+  } else {
+    $('a.back-to-top').fadeOut('slow');
+  }
+});</script>
+<!--<script type="text/javascript">$('a.back-to-top').click(function() {
+  $('html, body').animate({
+    scrollTop: 0
+  }, 400);
+  return false;
+});</script>-->
+<script>
+
+// jQuery for page scrolling feature - requires jQuery Easing plugin
+    $('a.back-to-top').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: ($($anchor.attr('href')).offset().top - 50)
+        }, 1250, 'easeInOutExpo');
+        event.preventDefault();
+    });
+
+</script>
+<script>
+
+// jQuery for page scrolling feature - requires jQuery Easing plugin
+    $('a.sec1').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: ($($anchor.attr('href')).offset().top - 50)
+        }, 1250, 'easeInOutExpo');
+        event.preventDefault();
+    });
+
+</script>
+<script>
+
+// jQuery for page scrolling feature - requires jQuery Easing plugin
+    $('a.s3').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: ($($anchor.attr('href')).offset().top - 50)
+        }, 1250, 'easeInOutExpo');
+        event.preventDefault();
+    });
+
+</script>
+<script>
+
+// jQuery for page scrolling feature - requires jQuery Easing plugin
+    $('a.s2').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: ($($anchor.attr('href')).offset().top - 50)
+        }, 1250, 'easeInOutExpo');
+        event.preventDefault();
+    });
+
+</script>
+<script>
+
+// jQuery for page scrolling feature - requires jQuery Easing plugin
+    $('a.s4').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: ($($anchor.attr('href')).offset().top - 50)
+        }, 1250, 'easeInOutExpo');
+        event.preventDefault();
+    });
+
+</script>
+<script>
+
+// jQuery for page scrolling feature - requires jQuery Easing plugin
+    $('a.s5').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: ($($anchor.attr('href')).offset().top - 50)
+        }, 1250, 'easeInOutExpo');
+        event.preventDefault();
+    });
+
+</script>
+<!--
+<script >
+  $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+          $('html, body').animate({
+          scrollTop: target.offset().top
+          }, 400);
+          return false;
+        }
+      }
+  });
+ </script>-->
+</body>
+</html>
